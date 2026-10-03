@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* Flexbox Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #1f4e79;
+    color: white;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.brand p {
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.hero,
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #1f4e79;
+}
+
+/* Three-column CSS Grid */
+.stop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stop-card {
+    padding: 20px;
+    background: #e8f0f7;
+    border: 1px solid #c5d5e5;
+    border-radius: 8px;
+}
+
+.stop-card h3 {
+    margin-top: 0;
+    color: #1f4e79;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f4e79;
+    color: white;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .stop-grid {
+        grid-template-columns: 1fr;
+    }
+}
